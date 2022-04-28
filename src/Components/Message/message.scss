@@ -1,0 +1,24 @@
+.message {
+    display: flex;
+    align-items:center;
+    color: white;
+    padding: 10px 15px;
+    width: fit-content;
+}
+.message-content {
+    overflow-wrap:anywhere;
+    position: relative;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    p {
+        font-size: 14px;
+    }
+    small {
+        position: absolute;
+        font-size: 10px;
+        bottom: -15px;
+        right: 0px;
+    }
+}

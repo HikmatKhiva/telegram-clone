@@ -1,0 +1,40 @@
+.sidebarThread {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+  border-bottom: 1px solid rgba(190, 190, 190, 0.1);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.sidebarThread:hover {
+  background-color: #0296be;
+}
+
+.sidebarThread-details {
+  margin-left: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.sidebarThread-details h3 {
+  font-size: 18px;
+}
+
+.sidebarThread-details p {
+  margin-left: 5px;
+}
+
+.sidebarThread-timestamp {
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  color: lightgray;
+  font-size: 10px;
+}
+/*# sourceMappingURL=sidebarThread.css.map */

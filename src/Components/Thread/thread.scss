@@ -1,0 +1,56 @@
+.thread {
+  display: flex;
+  flex: 0.75 ;
+  height: 100vh;
+  flex-direction: column;
+}
+.thread-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgba(190, 190, 190, 0.1);
+}
+.thread-headerContainer {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.thread-headerMore__Horizontal{
+  color: white;
+  &:hover {
+    color: #0088cc;
+  }
+}
+.thread-headerDetails__info {
+  margin-left: 10px;
+}
+.threadMessage {
+  flex: 1;
+  overflow: scroll;
+  scrollbar-width: 0;
+  &::-webkit-scrollbar{
+    display: none;
+    appearance: none;
+  }
+}
+.thread-input {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid rgba(190, 190, 190, 0.1);
+  margin-top: auto;
+  form {
+    display: flex;
+    align-items: center;
+    flex:1;
+    input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 4px 8px;
+      color: white;
+      font-size: 16px;
+    }
+  }
+}
