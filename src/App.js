@@ -20,7 +20,6 @@ function App() {
       } else {
         dispatch(logout())
       }
-      console.log(authUser);
     })
   }, [dispatch])
   return (

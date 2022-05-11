@@ -9,12 +9,6 @@ import { selectUser } from '../../features/userSlice';
 import { useSelector } from 'react-redux';
 const SideBar = () => {
     const user = useSelector(selectUser);
-    const addThread = () => {
-        const threadName = prompt("Enter Your Name");
-        db.collection("threads").add({
-            threadName,
-        })
-    }
     const [threads, setThreads] = useState([])
     useEffect(() => {
         db.collection("threads").onSnapshot((snapshot) => {
@@ -26,8 +20,12 @@ const SideBar = () => {
             })))
         })
     }, [])
-    console.log(threads);
-
+    const addThread = () => {
+        const threadName = prompt("Enter Your Name");
+        db.collection("threads").add({
+            threadName,
+        })
+    }
     return (
         <div className='sidebar'>
             <div className="sidebar-header">
@@ -41,7 +39,7 @@ const SideBar = () => {
             </div>
             <div className="sidebar-thread">
                 {threads.map(({ id, data: { threadName } })=>(
-                <SidebarThread  key={id} id={id} threadName={threadName} />))
+                <SidebarThread userPhoto={user.photoUrl}  key={id} id={id} threadName={threadName} />))
                }
             </div>
             <div className="sidebar-bottom">

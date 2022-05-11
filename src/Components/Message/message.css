@@ -10,6 +10,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 10px 0;
 }
 
 .message-content {
@@ -26,9 +27,11 @@
 }
 
 .message-content small {
+  white-space: nowrap;
   position: absolute;
   font-size: 10px;
-  bottom: -15px;
-  right: 0px;
+  bottom: -20px;
+  right: -30px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=message.css.map */
